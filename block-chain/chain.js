@@ -50,10 +50,6 @@ class Blockchain{
             if(currentBlock.hash!==currentBlock.calculatedHash()){
                 return false;
             }
-            
-            if(currentBlock.previousHash!==prevBlock.calculatedHash()){
-                return false;
-            }
         }
         
         return true;
